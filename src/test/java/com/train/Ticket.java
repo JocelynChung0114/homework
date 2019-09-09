@@ -15,7 +15,7 @@ class Ticket {
                 "Total: " + getMoney());
     }
 
-    private double getMoney(){
-        return (count - roundTripCount) * 1000 + (roundTripCount * 2000 * 0.9);
+    private int getMoney(){
+        return (int) ((count - roundTripCount) * 1000 + (roundTripCount * 2000 * 0.9));
     }
 }

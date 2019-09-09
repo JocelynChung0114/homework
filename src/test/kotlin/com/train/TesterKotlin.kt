@@ -17,7 +17,7 @@ class TicketPrice (var count: Int, var roundTripCount: Int ) {
         print("Total tickets: $count Round-trip: $roundTripCount Total: ${total()}")
     }
 
-    private fun total (): Double {
-        return  (count - roundTripCount) * 1000 + (roundTripCount * 2000 * 0.9);
+    private fun total (): Int {
+        return  (count - roundTripCount) * 1000 + (roundTripCount * 2000 * 0.9).toInt();
     }
 }
