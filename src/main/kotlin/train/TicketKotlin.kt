@@ -1,4 +1,4 @@
-package com.train
+package train
 
 import java.util.*
 
@@ -17,7 +17,5 @@ class TicketPrice (var count: Int, var roundTripCount: Int ) {
         print("Total tickets: $count Round-trip: $roundTripCount Total: ${total()}")
     }
 
-    private fun total (): Int {
-        return  (count - roundTripCount) * 1000 + (roundTripCount * 2000 * 0.9).toInt();
-    }
+    private fun total () = (count - roundTripCount) * 1000 + (roundTripCount * 2000 * 0.9).toInt()
 }

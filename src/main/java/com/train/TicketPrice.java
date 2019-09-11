@@ -2,7 +2,7 @@ package com.train;
 
 import java.util.Scanner;
 
-public class Tester {
+public class TicketPrice {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
